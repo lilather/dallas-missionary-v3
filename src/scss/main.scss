@@ -1,0 +1,355 @@
+
+
+$color-black:#1E1D1D;
+$color-white:#fff;
+$color-blue: #4A879E;
+
+
+
+video{
+  width:100%;
+}
+.sub-title{
+  color: $color-blue;
+  font-size:0.9rem;
+
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+
+body {
+  font-size: 18px;
+  color: #eee;
+  max-width: 3000px;
+  margin: 0 auto;
+  position: relative;
+  font-family: hind, sans-serif;
+  font-style: normal;
+  font-weight: 300
+}
+.wrapper{
+  background-color: $color-black;
+padding:5% 15%;
+
+}
+
+
+
+.navbar-nav{
+  margin-right:50px;
+}
+.navbar{
+  background-color:$color-white;
+}
+.navbar-brand {
+  width: 300px
+}
+
+.navbar-brand img {
+  max-width: 20%
+}
+
+.navbar-brand span {
+  margin-left: 12px
+}
+
+.link {
+  text-transform: uppercase
+}
+
+.navbar-collapse{
+  justify-items: center;
+
+    justify-content: center;
+
+}
+.navbar-nav{
+  margin-left:auto;
+  align-items: center;
+}
+.navbar-nav:hover .link {
+  color: rgba(51, 51, 51, .35)
+}
+
+.navbar-nav:hover .link:hover {
+  color: #4a879e
+}
+
+.navbar-nav:hover .link:hover:after {
+  width: calc(100% - 20px)
+}
+
+
+.connect{
+  padding-left:17px !important;
+}
+.connect svg{
+  margin-right:10px;
+}
+.social{
+  margin-left:auto;
+}
+.social a{
+  margin:0px 4px
+}
+a#backToTop {
+  position: fixed;
+  bottom: 5%;
+  left: 97%;
+  z-index: 2000;
+  transition: all 180ms;
+  opacity: 0
+}
+
+a#backToTop :hover {
+  fill: #4a879e;
+  cursor: pointer
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-transform: capitalize;
+  color: #4a879e
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize
+}
+
+h2 {
+  font-size: 2.6rem
+}
+
+h3 {
+  font-size: 2.4rem
+}
+
+.btn{
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  width:275px;
+  height:75px;
+}
+.banner{
+  background-color: #fff;
+  color:#1e1d1d;
+}
+.banner-content{
+  padding:4%;
+}
+.banner-header{
+  font-size:7rem;
+  font-weight: bold;
+}
+.banner-btn{
+  margin-right:15px;
+  font-size: 1.2rem;
+ 
+}
+.banner p{
+  font-size: 1.6rem;
+
+}
+.section {
+margin:125px 0px
+}
+
+
+.section h2 {
+  font-size:3.1rem;
+  margin: 20px 0px;
+  font-weight:600;
+}
+.section h3{
+  margin-top:25px;
+  font-weight: 600;
+}
+
+.content-section{
+  background-color:#fff;
+  color:$color-black;
+  padding: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.content-section p{
+  font-size: 1.7rem;
+}
+
+.sub-section{
+  margin-bottom:75px;
+}
+
+.content-section .btn{
+  font-size: 1.4rem;
+}
+
+.blue-btn{
+background-color: $color-blue;
+color:$color-white;
+}
+.outline-btn{
+background-color:$color-white;
+color: $color-blue;
+border:thin $color-blue solid;
+}
+.charitable-events .sub-section{
+  position: relative;
+  padding-right:0px;
+
+}
+
+.charitable-events a:link, .sub-section a:link{
+  font-size:1.8rem;
+}
+.img-frame{
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding:2% 4% 5% 4%;
+  color:$color-black;
+}
+.sublinks{
+  margin-right:10px;
+}
+footer {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 3% !important;
+  padding-left: 3% !important;
+  background-color: #1e1d1d
+}
+
+footer h4 {
+  font-size: 1.2rem
+}
+
+footer {
+  background-color: #000;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: heebo, sans-serif;
+  font-style: normal;
+  font-weight: 300
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+.social-links .d-flex > div{
+  margin-right:7px
+  }
+footer a{
+  display:block
+}
+@media only screen and (max-width:1500px) {
+  .row>*{
+    flex-basis: 100%;
+  }
+  footer .row>*{
+    flex-basis: initial;
+  }
+footer h4{
+  font-size: 1.6rem;
+}
+.footer-container{
+  margin:25px 0px;
+}
+}
+
+@media only screen and (max-width:1200px) {
+  .wrapper{
+padding:3% 5%;
+  }
+  .section {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important
+  }
+.social{
+  display: none;
+}
+ 
+}
+
+@media only screen and (max-width:900px) {
+  footer {
+    padding: 2%
+  }
+
+  footer h4 {
+    font-size: 1.6rem
+  }
+  footer li{
+    font-size: 1.2rem
+
+  }
+  .banner-btn{
+    margin:20px 5px;
+  }
+  .section h2{
+    font-size: 2.3rem;
+  }
+  .content-section p{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .banner-btn{
+    margin:10px 0px;
+  }
+  body{
+    font-size:16px;
+  }
+  .wrapper{
+    padding:1%;
+      }
+
+  .banner-header{
+    font-size: 3.7rem;
+  }
+  .navbar .container-fluid {
+    justify-content: center
+  }
+
+  h1 {
+    font-size: 2.4rem
+  }
+
+  h2 {
+    font-size: 2rem
+  }
+
+  h3 {
+    font-size: 1.5rem
+  }
+
+  .section {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important
+  }
+}
