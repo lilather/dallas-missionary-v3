@@ -39,8 +39,15 @@ body {
 .navbar-brand span {
   margin-left: 12px; }
 
-.link {
+a.link {
   text-transform: uppercase; }
+
+a.link {
+  text-decoration: none; }
+
+a.link:hover {
+  color: #000 !important;
+  text-decoration: underline; }
 
 .navbar-collapse {
   justify-items: center;
@@ -49,15 +56,6 @@ body {
 .navbar-nav {
   margin-left: auto;
   align-items: center; }
-
-.navbar-nav:hover .link {
-  color: rgba(51, 51, 51, 0.35); }
-
-.navbar-nav:hover .link:hover {
-  color: #4a879e; }
-
-.navbar-nav:hover .link:hover:after {
-  width: calc(100% - 20px); }
 
 .connect {
   padding-left: 17px !important; }

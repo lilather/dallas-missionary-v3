@@ -14,7 +14,9 @@ body
   nav.navbar.navbar-expand-xl.navbar-light
     .container-fluid
       a.navbar-brand(href='#' title='Dallas Missionary Church')
-        img(src='./img/logo.svg')
+        svg(xmlns='http://www.w3.org/2000/svg' width='45.572' height='63.036' viewbox='0 0 45.572 63.036')
+         path#logo(d='M491.4,669.166a22.8,22.8,0,0,0-22.788,22.845,30.624,30.624,0,0,0,.844,7.2,23.767,23.767,0,0,0,4.423,9.1c4.375,5.58,10.243,12.34,13.957,16.543,2.141,2.426,3.562,3.877,7.124,7.346V693.727h8.179V686.6H494.96v-8.175h-7.124V686.6h-8.175v7.13h8.175v17.195a19.249,19.249,0,1,1,9.489-.569v11.815c3.557-4.076,8.062-9.349,11.592-13.854a23.771,23.771,0,0,0,4.426-9.1,30.8,30.8,0,0,0,.841-7.2A22.792,22.792,0,0,0,491.4,669.166Z' transform='translate(-468.612 -669.166)')
+
         span
           | Dallas
           | Missionary Church 
@@ -163,7 +165,7 @@ body
               a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') espanol
               a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') Download
  footer.footer.container-fluid
-       .row.justify-content-between
+       .row.justify-content-around
         .footer-container.contact.col-xl-2
           h4 contact:
           ul
@@ -172,18 +174,18 @@ body
         .footer-container.phone.col-xl-2
           h4 phone:
           ul
-            li  tel 214-761-5067
-            li  fax 214-761-5068
+            li  Tel 214-761-5067
+            li  Fax 214-761-5068
         .footer-container.social-links.col-xl-2
           h4 follow us
           .d-flex
-            div
+            div.mx-2
               img(src='./img/Icon awesome-facebook-square.svg')
-            div
+            div.mx-2
               img(src='./img/Icon awesome-instagram.svg')
-            div
+            div.mx-2
               img(src='./img/Icon awesome-linkedin.svg')
-            div
+            div.mx-2
               img(src='./img/Icon awesome-twitter-square.svg')
         .footer-container.legal-stuff.col-xl-2
           h4 legal stuff:
@@ -193,7 +195,7 @@ body
           h4 Other Stuff:
           a.footer-links(href='#') statement of faith
           a.footer-links(href='#') faq
-        .footer-container.copy-write.col-xl-12.mt-5
+        .footer-container.copy-write.col-xl-12.mt-5.text-center
           p Copyright &copy; 2021 All Rights Reserved.
  a#backToTop.backToTop(title='Go back to the top')
   svg(xmlns='http://www.w3.org/2000/svg' fill='#fff' width='45' height='45' viewbox='0 0 45 45')
