@@ -124,7 +124,8 @@ h3 {
   font-size: 1.2rem; }
 
 .banner p {
-  font-size: 1.6rem; }
+  font-size: 1.8rem;
+  padding: 3% 0px; }
 
 .section {
   margin: 125px 0px; }
@@ -269,4 +270,20 @@ footer a {
     font-size: 1.5rem; }
   .section {
     margin-top: 50px !important;
-    margin-bottom: 50px !important; } }
+    margin-bottom: 50px !important; }
+  .img-frame {
+    position: relative; }
+  .charitable-events .sub-section {
+    position: relative;
+    padding-right: calc(var(--bs-gutter-x)/ 2); } }
+
+@media screen and (max-width: 387px) {
+  .navbar-brand span {
+    display: none; }
+  .navbar-brand {
+    text-align: center;
+    margin: 30px 0px; }
+  .navbar-toggler {
+    margin-bottom: 30px; }
+  .content-section {
+    padding: 20px 10px; } }
