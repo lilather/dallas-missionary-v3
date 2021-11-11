@@ -1,6 +1,6 @@
 
 
-$color-black:#1E1D1D;
+$color-black:#0a0a0a;
 $color-white:#fff;
 $color-blue: #4A879E;
 
@@ -8,6 +8,9 @@ $color-blue: #4A879E;
 
 video{
   width:100%;
+}
+.video-container h3{
+  font-size: 2rem;
 }
 .sub-title{
   color: $color-blue;
@@ -32,13 +35,15 @@ body {
 }
 .wrapper{
   background-color: $color-black;
-padding:5% 15%;
+padding:5% 20%;
 
 }
 
 
 
 .navbar-nav{
+  padding-top:0.7rem;
+  padding-bottom:0.7rem ;
   margin-right:50px;
 }
 .navbar{
@@ -90,7 +95,7 @@ a.link:hover{
   margin-left:auto;
 }
 .social a{
-  margin:0px 4px
+  margin:0px 8px
 }
 a#backToTop {
   position: fixed;
@@ -128,7 +133,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem
+  font-size: 2.1rem
 }
 
 .btn{
@@ -143,7 +148,7 @@ h3 {
   color:#1e1d1d;
 }
 .banner-content{
-  padding:4%;
+  padding:1% 3%;
 }
 .banner-header{
   font-size:7rem;
@@ -166,13 +171,11 @@ margin:125px 0px
 
 
 .section h2 {
-  font-size:3.1rem;
+  font-size:2.4rem;
   margin: 20px 0px;
-  font-weight:600;
 }
 .section h3{
   margin-top:25px;
-  font-weight: 600;
 }
 
 .content-section{
@@ -181,7 +184,7 @@ margin:125px 0px
   padding: 30px;
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: center;
 }
 
 .content-section p{
@@ -199,18 +202,45 @@ justify-content: space-evenly;
 .blue-btn{
 background-color: $color-blue;
 color:$color-white;
+border-color: $color-blue ;
 }
+.blue-btn:hover{
+  color:$color-blue;
+  background-color: $color-white;
+  
+  }
 .outline-btn{
 background-color:$color-white;
 color: $color-blue;
 border:thin $color-blue solid;
 }
+.outline-btn:hover{
+  background-color:$color-blue;
+color: $color-white;
+border:thin $color-blue solid;
+}
+
+
 .charitable-events .sub-section{
   position: relative;
   padding-right:0px;
 
 }
 
+
+
+.next-steps h2, .plan-your-visted h2{
+  font-size: 4rem;
+}
+.next-steps .img-section{
+  background-image: url('../img/Group Of Young People Reading Bible Together@2x.png');
+  background-size: cover;
+
+}
+.plan-your-visted .img-section{
+background-image: url('../img/plan_your_visit@2x.png');
+background-size: cover;
+}
 .charitable-events a:link, .sub-section a:link{
   font-size:1.8rem;
 }
@@ -226,24 +256,44 @@ border:thin $color-blue solid;
   margin-right:10px;
 }
 footer {
-  display: flex;
   font-size: 1.2rem;
   justify-content: space-evenly;
+ background-color: $color-black;
+border-top-style:solid;
+border-top-color:rgba(49, 48, 48, 0.8);
+border-top-width:1px;
+
+
+}
+
+footer h4 {
+  font-size: 1.4rem;
+  margin-bottom: 7px;
+  text-decoration: underline;
+}
+.footer-container.col-xl-2{
+padding:3%;
+}
+
+
+
+.footer.container-fluid{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.footer.row{
   padding-top: 3%;
   padding-bottom: 3%;
   padding-right: 3% !important;
   padding-left: 3% !important;
-  background-color: #1e1d1d
 }
-
-footer h4 {
-  font-size: 1.2rem
+.copy-write{
+background-color: #3a3a3a33;
+  padding:1% 10px;
 }
-
-footer {
-  background-color: #000;
+.copy-write p{
+  margin:0;
 }
-
 
 h1,
 h2,
@@ -278,7 +328,14 @@ footer h4{
 .footer-container{
   margin:25px 0px;
 }
+.img-section{
+  height: 600px;
 }
+.banner p{
+padding:2%;
+}
+}
+
 
 @media only screen and (max-width:1200px) {
   .wrapper{

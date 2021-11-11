@@ -1,5 +1,6 @@
 const { src, dest, parallel } = require('gulp');
 const gulp = require('gulp');
+var ghPages = require('gulp-gh-pages-with-updated-gift');
 const plugins = require('gulp-load-plugins')()
 
 function pug() {
@@ -30,18 +31,19 @@ function img(){
   return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./dist/img/')).pipe(plugins.webp()).pipe(gulp.dest('./dist/img/'));
   }
   
+
 function deploy(){
-  return src("./dist/**/*").pipe(plugins.ghPages())
+    return src("./dist/**/*").pipe(ghPages())
+  
+  }
 
-}
 
-
-exports.dev = parallel(pug, sass);
-exports.dist = parallel(pug, sass, img, js,css,html);
 exports.deploy=deploy;
 exports.pug=pug;
 exports.sass=sass;
 exports.js=js;
 exports.css=css;
 exports.img= img;
-exports.html=html
+exports.html=html;
+exports.dev = parallel(pug, sass);
+exports.dist = parallel(pug, sass, img, js,css,html);

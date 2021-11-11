@@ -14,10 +14,7 @@ body
   nav.navbar.navbar-expand-xl.navbar-light
     .container-fluid
       a.navbar-brand(href='#' title='Dallas Missionary Church')
-        svg(xmlns='http://www.w3.org/2000/svg' width='45.572' height='63.036' viewbox='0 0 45.572 63.036')
-         path#logo(d='M491.4,669.166a22.8,22.8,0,0,0-22.788,22.845,30.624,30.624,0,0,0,.844,7.2,23.767,23.767,0,0,0,4.423,9.1c4.375,5.58,10.243,12.34,13.957,16.543,2.141,2.426,3.562,3.877,7.124,7.346V693.727h8.179V686.6H494.96v-8.175h-7.124V686.6h-8.175v7.13h8.175v17.195a19.249,19.249,0,1,1,9.489-.569v11.815c3.557-4.076,8.062-9.349,11.592-13.854a23.771,23.771,0,0,0,4.426-9.1,30.8,30.8,0,0,0,.841-7.2A22.792,22.792,0,0,0,491.4,669.166Z' transform='translate(-468.612 -669.166)')
-
-        span
+       span
           | Dallas
           | Missionary Church 
       button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
@@ -77,21 +74,19 @@ body
     .row.gx-0.flex-wrap-reverse
      .content-section.col-xl-6
       h2 plan your visit
-      p
+      p.mt-3.mb-5
        | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
        | eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
        | voluptua. At vero.
       button.btn.blue-btn plan your visit
      .img-section.col-xl-6
-      img(src='./img/plan_your_visit@2x.png')
   .section.next-steps
    .container-fluid
     .row.gx-0
      .img-section.col-xl-6
-       img(src='./img/Group Of Young People Reading Bible Together@2x.png')
      .content-section.col-xl-6
       h2 next steps
-      p
+      p.mt-3.mb-5
         | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         | eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         | voluptua. At vero.
@@ -139,7 +134,7 @@ body
                   | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                   | eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                   | voluptua. At vero.
-                a(href='#') Learn More
+                button.btn.blue-btn Learn More
             .sub-section.col-xl-6
               img(src='img/food-drive@2x.png')
               .img-frame
@@ -148,7 +143,8 @@ body
                   | Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                   | eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
                   | voluptua. At vero.
-                a(href='#') Learn More
+                button.btn.blue-btn Learn More
+ 
   .container-fluid.sermon-section
           .row.video-container.justify
             .video.col-xl-7
@@ -157,17 +153,19 @@ body
               h2.latest-sermon Latest Sermon
               h3.title Dont Be Afraid.
               .sub-title November 8 2020
-              .video-info
+              .video-info.mt-2.mb-2
                 | Lorem ipsum dolor sit amet, consetetur sadipscing
                 | elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 | aliquyam erat, sed diam voluptua. At vero.
               .sub-links-container
               a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') espanol
               a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') Download
+  
  footer.footer.container-fluid
+       
        .row.justify-content-around
         .footer-container.contact.col-xl-2
-          h4 contact:
+          h4 Directions:
           ul
             li 4090 Carolyns Circle
             li Dallas,Texas,75202
@@ -177,7 +175,7 @@ body
             li  Tel 214-761-5067
             li  Fax 214-761-5068
         .footer-container.social-links.col-xl-2
-          h4 follow us
+          h4 follow us:
           .d-flex
             div.mx-2
               img(src='./img/Icon awesome-facebook-square.svg')
@@ -195,10 +193,11 @@ body
           h4 Other Stuff:
           a.footer-links(href='#') statement of faith
           a.footer-links(href='#') faq
-        .footer-container.copy-write.col-xl-12.mt-5.text-center
+       .copy-write.col-xl-12.text-center
           p Copyright &copy; 2021 All Rights Reserved.
  a#backToTop.backToTop(title='Go back to the top')
   svg(xmlns='http://www.w3.org/2000/svg' fill='#fff' width='45' height='45' viewbox='0 0 45 45')
     path(d='M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm18-1h-4v7h-4v-7h-4l6-6 6 6z')
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
 script(src='./js/main.js')
+
