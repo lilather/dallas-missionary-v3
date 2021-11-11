@@ -1,8 +1,7 @@
 const { src, dest, parallel } = require('gulp');
 const gulp = require('gulp');
-var ghPages = require('gulp-gh-pages-with-updated-gift');
 const plugins = require('gulp-load-plugins')()
-
+const ghPages = require('gulp-gh-pages');
 function pug() {
   return src( ["./src/pug/*"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(plugins.pug()).pipe(dest('./src/'));
 }

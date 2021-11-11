@@ -7,9 +7,9 @@ var _require = require('gulp'),
 
 var gulp = require('gulp');
 
-var ghPages = require('gulp-gh-pages-with-updated-gift');
-
 var plugins = require('gulp-load-plugins')();
+
+var ghPages = require('gulp-gh-pages');
 
 function pug() {
   return src(["./src/pug/*"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(plugins.pug()).pipe(dest('./src/'));
